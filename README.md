@@ -1,0 +1,3 @@
+# Geometry-Program
+This program is a geometry-based calculator. A calculator only based on certain geometrical
+OBjects such as square,rectangle,cube,sphere,eclipse,etc...

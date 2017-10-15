@@ -13,13 +13,13 @@ public class Cylinder{
 	public double getVolume(){
 
 
-	return (3.14)*(Math.pow(this.radius,2.0))*(this.height);
+	return (int)((3.14)*(Math.pow(this.radius,2.0))*(this.height))+5.0;
 
 	}
 
 	public double getSurfaceArea(){
 
-	return (2*3.140)*(this.radius*this.height) + (2*3.14)*(Math.pow(this.radius,2.0));
+	return (int)((2*3.140)*(this.radius*this.height) + (2*3.14)*(Math.pow(this.radius,2.0)))+5.0;
 	
 
 	}

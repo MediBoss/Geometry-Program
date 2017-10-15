@@ -15,7 +15,7 @@ private double height;
 	public double getVolume(){
 
 
-	return (1/3)*3.14*(Math.pow(this.radius,2.0))*this.height;
+	return (int)((1/3)*3.14*(Math.pow(this.radius,2.0))*this.height) +05.;
 
 	}
 
@@ -24,7 +24,7 @@ private double height;
 
 	double result = 3.14*this.radius*(this.radius + Math.sqrt(Math.pow(this.radius,2.0)+Math.pow(this.height,2.0)));
 
-	return result;
+	return (int)result +0.5;
 
 	}
 
@@ -36,3 +36,4 @@ private double height;
 	}
 
 }
+

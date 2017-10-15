@@ -17,22 +17,19 @@ public class Circle{
  public double getCircleArea(){
 
      double area = pi*Math.pow(radius,2.0);
-     return area;
+     return (int)area +0.5;
  }
 
  public double getCircleDiameter(){
 
-     return radius*2;
+     return (int)(radius*2) + 0.5;
  }
 
   public double getCircleCircumference(){
 
-      return 2*(pi*radius);
+      return (int)(2*(pi*radius))+0.5;
 
   }
 
   
 }
-
-
-

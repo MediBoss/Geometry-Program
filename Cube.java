@@ -1,4 +1,3 @@
-public class Cube{
 
   private double edge;
 
@@ -16,12 +15,12 @@ public class Cube{
 
   public double getCubeSurfaceArea(){
 
-    return (6*Math.pow(edge,2.0));
+    return (int)(6*Math.pow(edge,2.0))+0.5;
 }
 
   public double getCubeVolume(){
 
-      return (Math.pow(edge,3.0));
+      return (int)(Math.pow(edge,3.0))+0.5;
   }
 
   public String toString(){

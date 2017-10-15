@@ -5,7 +5,7 @@ public class Sphere{
 
   public Sphere(double rad){
 
-      radius = rad;
+      this.radius = rad;
   }
     public double sphereDiameter(){
 

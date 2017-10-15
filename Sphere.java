@@ -5,7 +5,7 @@ public class Sphere{
 
   public Sphere(double rad){
 
-      this.radius = rad;
+      radius = rad;
   }
     public double sphereDiameter(){
 
@@ -14,19 +14,19 @@ public class Sphere{
 
     public double sphereCircumference(){
 
-      return 2*(radius*pi);
+      return (int)2*(radius*pi)+0.5;
     }
 
     public double sphereSurfaceArea(){
 
         double surfArea = 4*(pi*Math.pow(radius,2.0));
-        return surfArea;
+        return (int)surfArea +5.0;
     }
 
     public double sphereVolume(){
 
         double sphereVol = 4/3*pi*Math.pow(radius,3.0);
-        return sphereVol;
+        return (int)sphereVol +0.5;
 
     }
 }

@@ -8,7 +8,7 @@ OBjects such as square,rectangle,cube,sphere,eclipse,etc...
 */
 
 import java.util.Scanner;
-public class Geometry{
+public class MyProgram{
   public static void main(String [] args){
 
   upperBar();//displays the upperbar
@@ -122,7 +122,7 @@ public class Geometry{
 
             }else if(userChoice==4){
               Scanner in13 = new Scanner(System.in);
-              System.out.println("What would like to calculate : \n\n\t*Diameter\n\n\t*Circumference\n\n\t*Area\n\n\t*Convert Degrees to Radians(Enter DTR)\n\n\t*Convert Radians to Degrees(Enter RTD)\n");
+              System.out.println("What would like to calculate : \n\n\t*Diameter\n\n\t*Circumference\n\n\t*Area\n\n\t*Convert Degrees to Radians(Enter DTR)");
               String calcChoice4 = in13.nextLine();
               Scanner in14 = new Scanner(System.in);
               System.out.println("\nEnter the Radius : \n");
@@ -136,15 +136,13 @@ public class Geometry{
                 }else if(calcChoice4.equals("circumference")){
                   //code to execute for circumference
                   System.out.println("The circumference is : "+myCircle.getCircleCircumference());
-                }else if(calcChoice4.equals("dtr")){
+                }else if(calcChoice4.equals("DTR")){
                   //convert degree to radians
                   Scanner in16 = new Scanner(System.in);
-                  System.out.println("\nEnter the Angle : ");
+                  System.out.println("\nEnter the Angle in Degrees: ");
                   double circleAngle = in16.nextDouble();
                   circleAngle = (double)(Math.toRadians(circleAngle));
                   System.out.println("\nDegree to Radian : "+circleAngle);
-                }else if(calcChoice4.equals("RTD")){
-                  //convert radians to degree
                 }else if(calcChoice4.equals("Diameter")){
                   System.out.println("The diamter is "+myCircle.getCircleDiameter());
 
@@ -238,24 +236,26 @@ public class Geometry{
         }else if(userChoice==8){
 
 		//code for a cylinder
+		
 		Scanner in26 = new Scanner(System.in);   
-      System.out.println("\nWhat would you like to solve  : for\n\n\t*Volume\n\n\t*Surface Area\n\n\t*Height\n\n\t*Radius\n\n\t*Base Area\n\t");
-                String calcChoice8 = in26.nextLine();
+        System.out.println("\nWhat would you like to solve  : for\n\n\t*Volume\n\n\t*Surface Area\n\n");
+        String calcChoice8 = in26.nextLine();
+        Scanner in27 = new Scanner(System.in);
+        System.out.println("Enter the Radius : ");
+        double rad = in27.nextDouble();
+        Scanner in28 = new Scanner(System.in);
+        System.out.println("Enter the Height : ");
+        double height = in28.nextDouble();
+        
+        Cylinder myCylinder = new Cylinder(rad,height);
+        
 			if(calcChoice8.equals("volume")){
 
 				//solve for volume
+				System.out.println("\nThe volume is : "+myCylinder.getVolume());
 			}else if(calcChoice8.equals("surface area")){
 			//solve for surface area
-		
-			}else if(calcChoice8.equals("height")){
-
-			//solve for the height
-			}else if(calcChoice8.equals("radius")){
-
-			//solve for the radius
-			}else if(calcChoice8.equals("base area")){
-			//solve for the base area
-
+		    System.out.println("\nThe Surface Area is : "+myCylinder.getSurfaceArea());
 			}else{
                   		System.out.println("Invalid Input...Terminating Program...\nProgram Terminated");
                   		System.exit(0);
@@ -284,4 +284,3 @@ public class Geometry{
 
 
     }
-

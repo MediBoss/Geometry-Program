@@ -1,4 +1,4 @@
-
+  public class Cube{
   private double edge;
 
   public Cube(double edge){

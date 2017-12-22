@@ -9,8 +9,8 @@ public class Rectangle {
 */
 public Rectangle(double theWidth, double theLength){
   
-    double lengh = theLength;
-    double width = theWidth;
+    this.lengh = theLength;
+    this.width = theWidth;
   
 }
 

@@ -5,8 +5,8 @@ public class Rectangle extends Square{
 @param theLength is the parameter of the rectangle's length
 */
 public Rectangle(double theWidth, double theLength){
-  width = theWidth;
-  length = theLength;
+  
+  Square(theWidth,theLength);
   
 }
 

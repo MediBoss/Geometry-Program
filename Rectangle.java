@@ -6,7 +6,8 @@ public class Rectangle extends Square{
 */
 public Rectangle(double theWidth, double theLength){
   
-  Square(theWidth,theLength);
+    double lengh = theLength;
+    double width = theWidth;
   
 }
 

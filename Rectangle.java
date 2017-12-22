@@ -1,4 +1,4 @@
-public class Rectangle extends Square{
+public class Rectangle {
 
 /*
 *@param theWidth is the parameter of the rectangle's width

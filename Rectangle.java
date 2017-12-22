@@ -1,4 +1,6 @@
 public class Rectangle {
+  
+  private double width;
 
 /*
 *@param theWidth is the parameter of the rectangle's width

@@ -6,4 +6,13 @@
 
     Description
     
-This program is a Geometry-like calculator that is stricltly based on geometrical shapes such as square,rectangle,cylinder,cone,circle,ect... I developed this program to help current middle or high school students to calculate The area,volume,perimeter,surface area of height geometrical shapes. This program was built with some OOP concepts such as inheritance, polymorphism,abstract class,etc...
+This program is a Geometry-like calculator that is stricltly based on geometrical shapes such as: 
+
+* square
+* rectangle
+* cylinder
+* cone
+* circle
+
+
+###Purpose : I developed this program to help current middle or high school students to calculate The area,volume,perimeter,surface area of height geometrical shapes. This program was built with some OOP concepts such as inheritance, polymorphism,abstract class,etc...
